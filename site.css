@@ -1,0 +1,124 @@
+/* ----------------------------------------------------
+ * Print
+ */
+body.print {
+	padding: 20px;
+}
+
+
+/* ----------------------------------------------------
+ * Layout
+ */
+body {
+	padding-top: 55px; /* used by "navbar-fixed-top" of #header_navbar */
+}
+body > img {
+	display: none;
+}
+blockquote {
+	font-size: inherit;
+}
+
+#header {
+	border-radius: 0;
+	border-width: 0 0 1px 0;
+	opacity: 0.9;
+	/* z-index: 1; */ /* set z-index if header is not navbar-fixed-top */
+}
+
+#content {
+	padding: 0 0 50px 0;
+}
+
+#footer {
+	border-radius: 0;
+	border-width: 1px 0 0 0;
+	margin: 0;
+}
+#footer_navi {
+	padding-top: 15px;
+	text-align: center;
+}
+#footer_site {
+	color: #333;
+	font-size: 80%;
+	padding: 15px;
+	text-align: center;
+}
+
+/* ----------------------------------------------------
+ * Style
+ */
+.navbar-default .navbar-brand {
+	background: url(./logo/flying-bird-blue-48.png) left center no-repeat;
+	color: #6495ed;
+	font-weight: bold;
+	font-size: 22px;
+	margin-left: 10px;
+	padding: 14px 8px 10px 60px;
+	vertical-align: middle;
+}
+.navbar-default .navbar-text {
+	position: absolute;
+	font-size: 12px;
+	font-style: italic;
+	font-family: verdana;
+	margin: 30px 0 0 60px;
+}
+@media (min-width: 768px) {
+	.navbar-default .navbar-text {
+		margin: 30px 0 0 45px;
+	}
+}
+.intro-video {
+	width: 100%;
+}
+
+.system i.fa {
+	font-size: 144px;
+	display: block;
+	text-align: center;
+}
+.service h2 {
+	text-align: center;
+	margin: 30px 0;
+}
+.technology h3 {
+	text-align: center;
+	margin: 30px 0;
+}
+.technology p {
+	text-align: center;
+	border: dashed 2px #6A5ACD;
+	border-radius: 8px;
+}
+.technology i {
+	display: inline-block;
+	font-size: 140px;
+	margin: 20px;
+}
+.technology i.imgicon {
+	font-weight: bold;
+	width: 140px;
+	height: 140px;
+	padding: 120px 0 0 0;
+	font-size: 20px;
+}
+.imgicon-azure {
+	background: url(img/azure.png) no-repeat top center;
+}
+.imgicon-spring {
+	background: url(img/spring.png) no-repeat top center;
+}
+.imgicon-struts {
+	background: url(img/struts.png) no-repeat top center;
+}
+.imgicon-mssql {
+	background: url(img/mssql.png) no-repeat top center;
+}
+.imgicon-iis {
+	background: url(img/iis.png) no-repeat top center;
+}
+.imgicon-jenkins {
+	background: url(img/jenkins.png) no-repeat top center;
+}
