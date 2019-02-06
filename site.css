@@ -74,6 +74,9 @@ blockquote {
 	width: 100%;
 }
 
+.system>div {
+	padding: 15px;
+}
 .system h4 {
 	font-weight: bold;
 }
@@ -124,4 +127,19 @@ blockquote {
 }
 .imgicon-jenkins {
 	background: url(img/jenkins.png) no-repeat top center;
+}
+
+.p-vform.form-horizontal {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.p-vform.form-horizontal>.form-group {
+	margin: 0;
+	padding: 5px 0;
+}
+.p-vform.form-horizontal>div.form-group {
+	border-top: 1px solid #ccc;
+}
+.p-vform.form-horizontal>div.form-group:first-of-type {
+	border-top: 0;
 }
