@@ -74,6 +74,9 @@ blockquote {
 	width: 100%;
 }
 
+.system h4 {
+	font-weight: bold;
+}
 .system i.fa {
 	font-size: 144px;
 	display: block;
