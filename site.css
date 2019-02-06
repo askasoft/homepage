@@ -85,6 +85,10 @@ blockquote {
 	display: block;
 	text-align: center;
 }
+.system p {
+	font-size: 120%;
+}
+
 .service h2 {
 	text-align: center;
 	margin: 30px 0;
