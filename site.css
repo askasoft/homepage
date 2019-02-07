@@ -70,6 +70,67 @@ blockquote {
 		margin: 30px 0 0 45px;
 	}
 }
+
+.stitle {
+	text-align: center;
+	padding: 20px;
+	font-size: 2em;
+}
+.sbookmark {
+	background-color: #DC143C;
+	border-radius: 5px;
+	color: #FFF;
+	display: inline-block;
+	margin: 30px 0;
+	padding: 10px 30px;
+	position: relative;
+}
+.sbookmark i {
+	position: absolute;
+	left: -30px;
+	top: -30px;
+	color: #87CEEB;
+	font-size: 50px;
+	-webkit-transform: rotate(315deg);
+	-ms-transform: rotate(315deg);
+	transform: rotate(315deg);
+}
+.spoint {
+	padding: 10px;
+}
+.spoint .panel-heading {
+	background-color: #FFA500;
+	color: #FFF;
+	padding: 20px 20px;
+	font-size: 26px;
+	font-weight: bold;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.spoint .panel-heading i {
+	font-size: 40px;
+}
+.spoint .panel-body {
+	background-color: #888;
+	color: #FFF;
+	font-size: 24px;
+	padding: 40px;
+	min-height: 320px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.tcenter {
+	text-align: center;
+}
+.scell > p {
+	background: #EEE8AA;
+	font-size: 120%;
+	border: solid 1px #ccc;
+	border-radius: 10px;
+	height: 200px;
+	margin: 10px;
+	padding: 15px;
+}
 .intro-video {
 	width: 100%;
 }
