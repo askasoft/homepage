@@ -71,11 +71,59 @@ blockquote {
 	}
 }
 
+.matrix-title {
+	text-align: center; 
+	font-size: 70px; 
+	color: white; 
+	position: absolute;
+	height: 100%; 
+	width:100%; 
+	padding: 80px 50px;
+}
+.matrix-descp {
+	color: gold;
+	font-size: 60px;
+}
+@media (max-width: 767px) {
+	.matrix-title {
+		font-size: 40px; 
+		padding: 80px 50px;
+	}
+	.matrix-descp {
+		font-size: 30px;
+	}
+}
+
 .stitle {
 	text-align: center;
 	padding: 20px;
 	font-size: 2em;
 }
+.ssales {
+	background-color: #000000;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 30px 150px;
+	font-weight: bold;
+}
+.ssales-title {
+	font-size: 50px;
+}
+.ssales-descp {
+	font-size: 30px;
+}
+@media (max-width: 767px) {
+	.ssales {
+		padding: 30px 10px;
+	}
+	.ssales-title {
+		font-size: 28px;
+	}
+	.ssales-descp {
+		font-size: 20px;
+	}
+}
+
 .sbookmark {
 	background-color: #DC143C;
 	border-radius: 5px;
@@ -87,7 +135,7 @@ blockquote {
 }
 .sbookmark i {
 	position: absolute;
-	left: -30px;
+	left: -10px;
 	top: -30px;
 	color: #87CEEB;
 	font-size: 50px;
@@ -95,6 +143,12 @@ blockquote {
 	-ms-transform: rotate(315deg);
 	transform: rotate(315deg);
 }
+@media (max-width: 767px) {
+	.sbookmark {
+		font-size: 22px;
+	}
+}
+
 .spoint {
 	padding: 10px;
 }
