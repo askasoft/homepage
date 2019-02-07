@@ -87,7 +87,7 @@ blockquote {
 @media (max-width: 767px) {
 	.matrix-title {
 		font-size: 40px; 
-		padding: 80px 50px;
+		padding: 50px 20px;
 	}
 	.matrix-descp {
 		font-size: 30px;
