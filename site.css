@@ -10,7 +10,7 @@ body.print {
  * Layout
  */
 body {
-	padding-top: 55px; /* used by "navbar-fixed-top" of #header_navbar */
+	padding-top: 50px; /* used by "navbar-fixed-top" of #header_navbar */
 }
 body > img {
 	display: none;
@@ -23,6 +23,7 @@ blockquote {
 	border-radius: 0;
 	border-width: 0 0 1px 0;
 	opacity: 0.9;
+	margin-bottom: 0;
 	/* z-index: 1; */ /* set z-index if header is not navbar-fixed-top */
 }
 
@@ -207,19 +208,31 @@ blockquote {
 	width: 100%;
 }
 
-.system>div {
+.sbg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	opacity: 0.2;
+}
+.ssystem {
+}
+.ssystem>.row {
+}
+.ssystem>.row>div {
 	padding: 15px;
 }
-.system h4 {
+.ssystem h4 {
 	font-weight: bold;
+	font-size: 1.5em;
 }
-.system i.fa {
+.ssystem i.fa {
 	font-size: 144px;
 	display: block;
 	text-align: center;
 }
-.system p {
-	font-size: 120%;
+.ssystem p {
+	font-size: 1.5em;
 }
 
 .service h2 {
