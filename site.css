@@ -280,6 +280,19 @@ blockquote {
 	background: url(img/jenkins.png) no-repeat top center;
 }
 
+.sproduct {
+	font-size: 140%;
+}
+.sproduct h1 {
+	border-bottom: 4px double #ccc;
+}
+.sproduct p>img {
+	width: 100%;
+}
+.sproduct>.sbg {
+	opacity: 0.05;
+}
+
 /* -------------------------------------------------------
  * Tools
  */
