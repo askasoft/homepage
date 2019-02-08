@@ -6,13 +6,13 @@
 <meta name="description" content="飛鳥ソフトは少数精鋭開発者より低コスト・短期間・高品質のシステム開発を提供する会社です。多様多種な開発言語、開発基盤で、業務システム、WEBシステム、モバイルアプリを柔軟に開発することが可能です。"/>
 <meta property="og:image" content="https://aska-soft.com/logo/askasoft.png">
 <title>飛鳥ソフト</title>
-<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="shortcut icon" href="favicon.ico"/>
 <link href="https://netdna.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 <link href="site.css" rel="stylesheet" type="text/css"/>
 </head>
 
-<body onload="page_onload()">
+<body onload="matrix_rain();">
 <div id="main">
 <div id="header" class="navbar navbar-default navbar-fixed-top">
 	<div class="container">
@@ -26,11 +26,11 @@
 		</div>
 		<div class="navbar-collapse collapse" id="navbar_main">
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="/index.html"><i class="fa fa-home"></i> ホーム</a></li>
-				<li><a href="/company.html"><i class="fa fa-bank"></i> 会社情報</a></li>
-				<li><a href="/service.html"><i class="fa fa-codepen"></i> 事業内容</a></li>
-				<li><a href="/product.html"><i class="fa fa-gears"></i> プロダクト</a></li>
-				<li><a href="/contact.html"><i class="fa fa-envelope-o"></i> お問い合わせ</a></li>
+				<li><a href="index.html"><i class="fa fa-home"></i> ホーム</a></li>
+				<li><a href="company.html"><i class="fa fa-bank"></i> 会社情報</a></li>
+				<li><a href="service.html"><i class="fa fa-codepen"></i> 事業内容</a></li>
+				<li><a href="product.html"><i class="fa fa-gears"></i> プロダクト</a></li>
+				<li><a href="contact.html"><i class="fa fa-envelope-o"></i> お問い合わせ</a></li>
 			</ul>
 		</div>
 	</div>
@@ -114,7 +114,7 @@
 				</div>
 				<div class="panel-body">
 					大きな会社であれば入りたての新人の現場教育のコストもなぜかクライアントが負担しなければならないという不合理が生じますが、
-					弊社に依頼いただければスキルを持った開発者が仕事をさせていただく適性な作業工数をご提示致します。
+					弊社に依頼いただければスキルを持った開発者が仕事をさせていただく適正な作業工数をご提示致します。
 				</div>
 			</div>
 		</div>
@@ -126,66 +126,11 @@
 	<div id="footer_site">&copy; 2019 飛鳥ソフト</div>
 </div>
 
+<div class="p-totop p-corner p-corner-br p-hidden"><i class="fa fa-arrow-up"></i></div>
 </div>
-
-<script language="javascript">
-	function page_onload() {
-		matrix_rain();
-	}
-	
-	function matrix_rain() {
-		var c = document.getElementById("matrix");
-		var ctx = c.getContext("2d");
-
-		// making the canvas full of parent container
-		c.height = c.parentNode.clientHeight;
-		c.width = c.parentNode.clientWidth;
-
-		//characters
-		var chars = "abcdefghijklmnopqrstvuwxyz0123456789ABCDEFGHIJKLMNOPQRSTVUWXYZ`~!@#$%^&*()-=_+[]\\{}|,./<>?;':\"".split("");
-
-		var font_size = 10;
-		var columns = c.width/font_size; //number of columns for the rain
-		//an array of drops - one per column
-		var drops = [];
-		//x below is the x coordinate
-		//1 = y co-ordinate of the drop(same for every drop initially)
-		for (var x = 0; x < columns; x++) {
-			drops[x] = 1; 
-		}
-
-		//drawing the characters
-		function draw() {
-			//Black BG for the canvas
-			//translucent BG to show trail
-			ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
-			ctx.fillRect(0, 0, c.width, c.height);
-			
-			ctx.fillStyle = "#0F0"; //green text
-			ctx.font = font_size + "px arial";
-			//looping over drops
-			for(var i = 0; i < drops.length; i++) {
-				//a random character to print
-				var text = chars[Math.floor(Math.random()*chars.length)];
-				//x = i*font_size, y = value of drops[i]*font_size
-				ctx.fillText(text, i*font_size, drops[i]*font_size);
-				
-				//sending the drop back to the top randomly after it has crossed the screen
-				//adding a randomness to the reset to make the drops scattered on the Y axis
-				if (drops[i] * font_size > c.height && Math.random() > 0.975) {
-					drops[i] = 0;
-				}
-				
-				//incrementing Y coordinate
-				drops[i]++;
-			}
-		}
-
-		setInterval(draw, 100);
-	}
-</script>
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"></script>
 <script src="https://netdna.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="site.js" type="text/javascript"></script>
 </body>
 </html>

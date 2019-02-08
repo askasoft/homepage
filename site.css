@@ -84,6 +84,24 @@ blockquote {
 	color: gold;
 	font-size: 60px;
 }
+@media (max-width: 1199px) {
+	.matrix-title {
+		font-size: 60px; 
+		padding: 70px 40px;
+	}
+	.matrix-descp {
+		font-size: 50px;
+	}
+}
+@media (max-width: 991px) {
+	.matrix-title {
+		font-size: 50px; 
+		padding: 60px 30px;
+	}
+	.matrix-descp {
+		font-size: 40px;
+	}
+}
 @media (max-width: 767px) {
 	.matrix-title {
 		font-size: 40px; 
@@ -178,12 +196,12 @@ blockquote {
 }
 .scell > p {
 	background: #EEE8AA;
-	font-size: 120%;
+	font-size: 20px;
 	border: solid 1px #ccc;
 	border-radius: 10px;
 	height: 200px;
 	margin: 10px;
-	padding: 15px;
+	padding: 20px;
 }
 .intro-video {
 	width: 100%;
@@ -248,6 +266,9 @@ blockquote {
 	background: url(img/jenkins.png) no-repeat top center;
 }
 
+/* -------------------------------------------------------
+ * Tools
+ */
 .p-vform.form-horizontal {
 	border-top: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
@@ -262,3 +283,42 @@ blockquote {
 .p-vform.form-horizontal>div.form-group:first-of-type {
 	border-top: 0;
 }
+
+.p-hidden {
+	display: none;
+}
+.p-corner {
+	border: solid 1px #eee;
+	border-radius: 20px;
+	color: #bbb;
+	cursor: pointer;
+	position: fixed;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+}
+.p-corner:hover {
+	background-color: #4c87bb;
+	color: #fff;
+}
+.p-corner > * {
+	font-size: 20px;
+	line-height: 40px;
+}
+.p-corner-tl {
+	top: 5px;
+	left: 5px;
+}
+.p-corner-tr {
+	top: 5px;
+	right: 5px;
+}
+.p-corner-bl {
+	bottom: 5px;
+	left: 5px;
+}
+.p-corner-br {
+	bottom: 5px;
+	right: 5px;
+}
+
