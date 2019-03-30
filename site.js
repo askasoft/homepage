@@ -40,7 +40,7 @@ function matrix_rain() {
 		ctx.fillStyle = "#0F0"; //green text
 		ctx.font = font_size + "px arial";
 		//looping over drops
-		for(var i = 0; i < drops.length; i++) {
+		for (var i = 0; i < drops.length; i++) {
 			//a random character to print
 			var text = chars[Math.floor(Math.random()*chars.length)];
 			//x = i*font_size, y = value of drops[i]*font_size
