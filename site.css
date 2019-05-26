@@ -19,6 +19,11 @@ blockquote {
 	font-size: inherit;
 }
 
+h1 {
+	border-bottom: 4px double #ccc;
+	margin: 20px 0;
+}
+
 #header {
 	border-radius: 0;
 	border-width: 0 0 1px 0;
@@ -282,9 +287,6 @@ blockquote {
 .sproduct {
 	font-size: 140%;
 }
-.sproduct h1 {
-	border-bottom: 4px double #ccc;
-}
 .sproduct p>img {
 	width: 100%;
 }
@@ -296,8 +298,6 @@ blockquote {
  * Tools
  */
 .p-vform.form-horizontal {
-	border-top: 1px solid #ccc;
-	border-bottom: 1px solid #ccc;
 }
 .p-vform.form-horizontal>.form-group {
 	margin: 0;
