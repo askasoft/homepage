@@ -1,0 +1,9 @@
+baseURL = 'https://aska-soft.com/'
+languageCode = 'ja'
+title = '飛鳥ソフト'
+
+[markup]
+	[markup.goldmark]
+		[markup.goldmark.renderer]
+		unsafe = true
+
