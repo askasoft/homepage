@@ -9,7 +9,6 @@ draft: false
 <div style="height: 500px; position: relative;">
 	<div class="matrix-title">
 		<p>少数精鋭開発者より低コスト・短期間・高品質のシステム開発</p>
-		<p class="matrix-descp">!! 満足頂けない場合、全額返金します !!</p>
 	</div>
 </div>
 
